@@ -9,6 +9,7 @@ Documentação em docs/index.html
 Requisitos: Ruby 1.9
 
 Execução:
+
 	1- Executar o servidor
 		ruby servidor.rb
 
