@@ -13,7 +13,7 @@ Execução:
 	1- Executar o servidor
 		ruby servidor.rb
 
-	2- Executar os portões (a quantidade que desejar)
+	2- Abrir outro terminal e executar os portões (cada um em um terminal diferente)
 		ruby portao_entrada.rb
 		ruby portao_saida.rb
 
