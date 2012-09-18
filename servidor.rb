@@ -61,6 +61,6 @@ servidor = TCPServer.new('localhost', 9000)
 
 while(sessao = servidor.accept)
 	mensagem = sessao.recv 15
-	resposta = estacionamento.send(mensagem)
+	resposta = estacionamento.send(mensagem) # Chamada dinâmica de metodo
 	sessao.send resposta, 0
 end
