@@ -141,11 +141,15 @@
         <div class="method-description">
           
           <p>Cria um novo estacionamento. Com o numero passado de vagas</p>
+<dl class="rdoc-list label-list"><dt>vagas
+<dd>
+<p>Numero de vagas. Default: 5</p>
+</dd></dl>
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File servidor.rb, line 7</span>
+            <pre><span class="ruby-comment"># File servidor.rb, line 8</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">vagas</span> = <span class="ruby-value">5</span>)
         <span class="ruby-ivar">@vagas</span> = <span class="ruby-identifier">vagas</span>
         <span class="ruby-ivar">@atual</span> = <span class="ruby-value">0</span>
@@ -184,7 +188,7 @@ Imprime na tela a acao correspondente e o estado logo em seguida.</p>
 
           
           <div class="method-source-code" id="entra_carro-source">
-            <pre><span class="ruby-comment"># File servidor.rb, line 29</span>
+            <pre><span class="ruby-comment"># File servidor.rb, line 30</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">entra_carro</span>
         <span class="ruby-keyword">unless</span> <span class="ruby-identifier">estado</span>[<span class="ruby-value">0</span>]
                 <span class="ruby-ivar">@atual</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
@@ -222,7 +226,7 @@ Imprime na tela a acao correspondente e o estado logo em seguida.</p>
 
           
           <div class="method-source-code" id="estado-source">
-            <pre><span class="ruby-comment"># File servidor.rb, line 15</span>
+            <pre><span class="ruby-comment"># File servidor.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">estado</span>
         <span class="ruby-identifier">cheio</span> = <span class="ruby-ivar">@atual</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@vagas</span>
         <span class="ruby-identifier">mensagem</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">cheio</span> 
@@ -259,7 +263,7 @@ carros. Imprime na tela a acao correspondente e o estado logo em seguida.</p>
 
           
           <div class="method-source-code" id="sai_carro-source">
-            <pre><span class="ruby-comment"># File servidor.rb, line 45</span>
+            <pre><span class="ruby-comment"># File servidor.rb, line 46</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">sai_carro</span>
         <span class="ruby-keyword">if</span> <span class="ruby-ivar">@atual</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
                 <span class="ruby-ivar">@atual</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>  

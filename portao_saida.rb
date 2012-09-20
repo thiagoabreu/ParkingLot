@@ -4,9 +4,9 @@ require 'socket'
 class PortaoSaida
 
 	# Cria um novo portao.
-	# Recebe por parametro a porta que o servidor esta escutando
+	# [port] E a porta que o servidor esta escutando
 	def initialize(port)
-		@porta = port		
+		@porta = port.to_i
 	end
 
 	# Abre o portao para deixar um carro sair.
@@ -21,7 +21,8 @@ class PortaoSaida
 	end
 end
 
-portao = PortaoSaida.new 9000
+#Criar portao
+portao = PortaoSaida.new (ARGV.shift || 9000)
 
 puts '''Portao de Saida do Estacionamento
 Pressione:

@@ -6,7 +6,7 @@ class PortaoEntrada
 	# Cria um novo portao.
 	# [port] E a porta que o servidor esta escutando
 	def initialize(port)
-		@porta = port
+		@porta = port.to_i
 	end
 
 	# Abre o portao para deixar um carro entrar.
@@ -21,7 +21,8 @@ class PortaoEntrada
 	end
 end
 
-portao = PortaoEntrada.new 9000
+#Criar portao
+portao = PortaoEntrada.new (ARGV.shift || 9000)
 
 puts '''Portao de Entrada para o Estacionamento
 Pressione:

@@ -21,4 +21,4 @@ Numero da porta é opcional.
 	<code>ruby portao_entrada.rb [port]</code>
 	<code>ruby portao_saida.rb [port]</code>
 
-3- Para parar o servidor, apertar Ctrl+C
+3- Para parar o servidor, apertar Ctrl e C

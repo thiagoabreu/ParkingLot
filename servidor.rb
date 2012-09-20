@@ -4,6 +4,7 @@ require 'socket'
 class Estacionamento
 
 	# Cria um novo estacionamento. Com o numero passado de vagas
+	# [vagas] Numero de vagas. Default: 5
 	def initialize(vagas = 5)
 		@vagas = vagas
 		@atual = 0
@@ -56,8 +57,11 @@ class Estacionamento
 	
 end
 
+#Criar estacionamento
 estacionamento = Estacionamento.new
-servidor = TCPServer.new('localhost', 9000)
+porta = ARGV.shift || 9000
+servidor = TCPServer.new 'localhost', porta.to_i
+puts "Servidor escutando na porta #{servidor.addr[1]}."
 
 while(sessao = servidor.accept)
 	mensagem = sessao.recv 15
