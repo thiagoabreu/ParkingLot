@@ -13,11 +13,12 @@ Requisitos: Ruby 1.8.7 ou superior
 Execução
 --------
 
-	1- Executar o servidor
-		ruby servidor.rb
+1- Executar o servidor
+	<code>ruby servidor.rb [port]</code>
+Numero da porta é opcional.
 
-	2- Abrir outro terminal e executar os portões (cada um em um terminal diferente)
-		ruby portao_entrada.rb
-		ruby portao_saida.rb
+2- Abrir outro terminal e executar os portões (cada um em um terminal diferente)
+	<code>ruby portao_entrada.rb [port]</code>
+	<code>ruby portao_saida.rb [port]</code>
 
-	3- Para parar o servidor, apertar Ctrl+C
+3- Para parar o servidor, apertar Ctrl+C
