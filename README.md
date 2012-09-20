@@ -1,14 +1,17 @@
 ParkingLot
 ==========
 
-Trabalho de disciplina Sistema Distribuido
+Trabalho da disciplina Sistema Distribuido
+------------------------------------------
+
 Aluno: Thiago Anselmo Abreu Montenegro de Cerqueira
 
 Documentação em docs/index.html
 
-Requisitos: Ruby 1.9
+Requisitos: Ruby 1.8.7 ou superior
 
-Execução:
+Execução
+--------
 
 	1- Executar o servidor
 		ruby servidor.rb
